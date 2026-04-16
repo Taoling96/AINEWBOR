@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 新手村 — 零基础学 AI 的第一站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">🤖 AI 新手村</a>
+            <ul class="nav-links">
+                <li><a href="#what-is-ai">什么是 AI</a></li>
+                <li><a href="#tools">AI 工具</a></li>
+                <li><a href="#learning-path">学习路径</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="菜单">☰</button>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <header class="hero">
+        <canvas id="particles" class="particles-canvas"></canvas>
+        <div class="hero-content">
+            <h1>欢迎来到 <span class="highlight">AI 新手村</span></h1>
+            <p class="hero-subtitle">零基础也能轻松了解人工智能</p>
+            <p class="hero-desc">不需要编程经验，不需要数学基础。<br>我们用最简单的语言，带你走进 AI 的世界。</p>
+            <a href="#what-is-ai" class="cta-button">开始探索 →</a>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-icons">
+                <span class="icon icon-1">💡</span>
+                <span class="icon icon-2">🧠</span>
+                <span class="icon icon-3">🚀</span>
+                <span class="icon icon-4">✨</span>
+                <span class="icon icon-5">🎯</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 什么是 AI -->
+    <section id="what-is-ai" class="section">
+        <div class="container">
+            <h2 class="section-title">什么是 AI？</h2>
+            <p class="section-subtitle">用最简单的话来说</p>
+
+            <div class="concept-cards">
+                <div class="concept-card">
+                    <div class="card-icon">🗣️</div>
+                    <h3>AI 就像一个聪明的助手</h3>
+                    <p>你可以用日常语言跟它对话，问它问题、让它帮你写东西、翻译、总结文章，甚至帮你写代码。它不是万能的，但在很多事情上确实能帮到你。</p>
+                </div>
+                <div class="concept-card">
+                    <div class="card-icon">📚</div>
+                    <h3>它是怎么学会的？</h3>
+                    <p>AI 通过阅读互联网上海量的文字来"学习"。就像一个读了几百万本书的学生，它能理解你的问题并给出回答。但它不是真的"理解"，更像是非常擅长模式匹配。</p>
+                </div>
+                <div class="concept-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>AI 能做什么？</h3>
+                    <p>写文章、翻译、编程、画图、分析数据、回答问题、头脑风暴……AI 正在改变我们工作和学习的方式。了解它，就是为未来做准备。</p>
+                </div>
+            </div>
+
+            <div class="analogy-box">
+                <h3>💡 一个简单的比喻</h3>
+                <p>如果说搜索引擎（百度、Google）是<strong>图书馆</strong>——你去找书，自己阅读。<br>
+                那么 AI 助手就是<strong>私人老师</strong>——你提问，它直接给你解答。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI 工具推荐 -->
+    <section id="tools" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">新手友好的 AI 工具</h2>
+            <p class="section-subtitle">这些工具都可以免费使用，马上就能体验</p>
+
+            <div class="tools-grid">
+                <div class="tool-card" data-tool="chatgpt">
+                    <div class="tool-header">
+                        <span class="tool-icon">💬</span>
+                        <span class="tool-badge">对话类</span>
+                    </div>
+                    <h3>ChatGPT</h3>
+                    <p>最知名的 AI 对话工具。可以聊天、写作、翻译、回答各种问题。</p>
+                    <div class="tool-tags">
+                        <span class="tag">免费可用</span>
+                        <span class="tag">中文支持</span>
+                    </div>
+                    <div class="tool-tip">💡 试试问它："用小学生能听懂的话解释量子力学"</div>
+                    <div class="card-click-hint">点击了解更多 →</div>
+                </div>
+
+                <div class="tool-card" data-tool="midjourney">
+                    <div class="tool-header">
+                        <span class="tool-icon">🎨</span>
+                        <span class="tool-badge">图像类</span>
+                    </div>
+                    <h3>Midjourney / DALL·E</h3>
+                    <p>用文字描述你想要的画面，AI 就能帮你生成图片。不需要任何绘画技能。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI 绘画</span>
+                        <span class="tag">创意设计</span>
+                    </div>
+                    <div class="tool-tip">💡 试试描述："一只穿着宇航服的猫在月球上喝咖啡"</div>
+                    <div class="card-click-hint">点击了解更多 →</div>
+                </div>
+
+                <div class="tool-card" data-tool="kiro">
+                    <div class="tool-header">
+                        <span class="tool-icon">💻</span>
+                        <span class="tool-badge">编程类</span>
+                    </div>
+                    <h3>Kiro / Cursor</h3>
+                    <p>AI 编程助手，即使你不会写代码，也能通过对话让 AI 帮你创建程序和网站。</p>
+                    <div class="tool-tags">
+                        <span class="tag">零基础友好</span>
+                        <span class="tag">实时协作</span>
+                    </div>
+                    <div class="tool-tip">💡 这个网站就是用 Kiro 帮忙做的！</div>
+                    <div class="card-click-hint">点击了解更多 →</div>
+                </div>
+
+                <div class="tool-card" data-tool="suno">
+                    <div class="tool-header">
+                        <span class="tool-icon">🎵</span>
+                        <span class="tool-badge">音乐类</span>
+                    </div>
+                    <h3>Suno AI</h3>
+                    <p>输入歌词或描述风格，AI 就能帮你创作一首完整的歌曲，包括演唱。</p>
+                    <div class="tool-tags">
+                        <span class="tag">AI 音乐</span>
+                        <span class="tag">免费试用</span>
+                    </div>
+                    <div class="tool-tip">💡 试试让它创作一首"关于学习 AI 的欢快歌曲"</div>
+                    <div class="card-click-hint">点击了解更多 →</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学习路径 -->
+    <section id="learning-path" class="section">
+        <div class="container">
+            <h2 class="section-title">学习路径</h2>
+            <p class="section-subtitle">从零开始，一步一步来</p>
+
+            <div class="path-timeline">
+                <div class="path-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎮 先玩起来</h3>
+                        <p>不需要学任何理论，直接打开 ChatGPT 或类似工具，随便聊聊。问它任何你好奇的问题，感受 AI 能做什么。</p>
+                        <div class="step-time">⏱️ 建议花 1-2 天体验</div>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>📖 了解基本概念</h3>
+                        <p>学习一些基础术语：大语言模型（LLM）、提示词（Prompt）、Token 等。不需要深入技术细节，知道大概意思就行。</p>
+                        <div class="step-time">⏱️ 建议花 1 周</div>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>✍️ 学会提问的艺术</h3>
+                        <p>学习"提示词工程"（Prompt Engineering）。同样的问题，不同的问法会得到完全不同的答案。掌握好的提问方式，能让 AI 更好地帮助你。</p>
+                        <div class="step-time">⏱️ 建议花 1-2 周</div>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>🛠️ 用 AI 解决实际问题</h3>
+                        <p>把 AI 融入你的日常工作或学习中。用它帮你写邮件、做总结、翻译文档、分析数据。在实践中你会越来越熟练。</p>
+                        <div class="step-time">⏱️ 持续练习</div>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>🚀 探索更多可能</h3>
+                        <p>尝试 AI 绘画、AI 编程、AI 音乐等不同领域。找到你最感兴趣的方向，深入学习。也许你会发现一个全新的职业方向！</p>
+                        <div class="step-time">⏱️ 按兴趣探索</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <p class="section-subtitle">新手最常问的问题，这里都有答案</p>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>我完全不懂技术，能学会用 AI 吗？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>完全可以！现在的 AI 工具设计得非常友好，你只需要会打字就能使用。就像你不需要懂汽车原理也能开车一样，你不需要懂 AI 的技术原理也能很好地使用它。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>AI 会取代我的工作吗？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>AI 更可能改变工作方式，而不是完全取代人。会使用 AI 的人会比不会的人更有竞争力。与其担心被取代，不如学会利用 AI 来提升自己的效率。把 AI 当作你的超级助手，而不是竞争对手。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>AI 说的话都是对的吗？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>不是的！AI 有时候会"一本正经地胡说八道"，这叫做"幻觉"（Hallucination）。对于重要的信息，一定要自己验证。把 AI 当作一个很聪明但偶尔会犯错的助手，而不是百分百可靠的权威。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>使用 AI 需要花钱吗？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>很多 AI 工具都有免费版本，足够日常使用。比如 ChatGPT 有免费版，各种 AI 绘画工具也有免费额度。等你用熟了，觉得需要更多功能时，再考虑付费版本也不迟。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>我应该从哪个 AI 工具开始？</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>建议从 ChatGPT 开始，因为它最通用、最容易上手。注册一个账号，直接开始对话就行。等你熟悉了基本的 AI 对话方式，再去尝试其他专门的工具（比如 AI 绘画、AI 编程等）。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工具详情弹窗 -->
+    <div class="modal-overlay" id="toolModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="关闭">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon" id="modalIcon"></span>
+                <div>
+                    <span class="modal-badge" id="modalBadge"></span>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                </div>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🤖 AI 新手村</h3>
+                    <p>让每个人都能轻松走进 AI 的世界</p>
+                </div>
+                <div class="footer-message">
+                    <p>这个网站是用 AI 辅助创建的 ✨</p>
+                    <p>这就是 AI 的魅力 — 即使你不是专业开发者，也能创造出有价值的东西。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AI 新手村 | 用 ❤️ 和 AI 一起制作</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
