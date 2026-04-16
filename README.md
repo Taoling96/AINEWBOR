@@ -1,0 +1,2 @@
+# AINEWBOR
+Learn AI Kro
